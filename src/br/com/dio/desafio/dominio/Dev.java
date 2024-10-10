@@ -1,8 +1,9 @@
 package br.com.dio.desafio.dominio;
 
+import javax.swing.*;
 import java.util.*;
 
-public class Dev {
+public class Dev{
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
@@ -17,6 +18,7 @@ public class Dev {
         if(conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
+            System.out.println("FINALIZADO COM SUCESSO!..." );
         } else {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
         }

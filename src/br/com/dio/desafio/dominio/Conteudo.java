@@ -6,6 +6,11 @@ public abstract class Conteudo {
 
     private String titulo;
     private String descricao;
+    private int cargaHoraria;
+
+    public int getCargaHoraria() {return cargaHoraria;}
+
+    public void setCargaHoraria(int cargaHoraria) {this.cargaHoraria = cargaHoraria;}
 
     public abstract double calcularXp();
 
